@@ -6,7 +6,7 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    background-color: #ca0000;
+    background-color:#d50000;
 }
 
 #root{
@@ -50,7 +50,7 @@ body {
     align-items:center;
     flex-direction: column;
     position: relative;
-    background: linear-gradient(to bottom left, #FF0000, #870000);
+ background-color: #d50000;
     overflow: hidden;
     z-index: 0;
 }
