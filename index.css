@@ -1,0 +1,727 @@
+body {
+    padding: 0;
+    margin:0;
+     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+}
+
+#page1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    opacity:1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom left, #FF0000, #870000);
+    z-index: 1;
+}
+
+#WelcomeConent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:16px;
+    opacity: 0;
+    
+}
+
+#page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(to bottom left, #FF0000, #870000);
+    overflow: hidden;
+    z-index: 0;
+}
+
+#welcome-bigText{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 44px;
+    font-weight: 100;
+}
+#welcome-smallText{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    bottom: 52px;
+    font-size: 38px;
+}
+#mekaraprLogoWelcome{
+    filter: drop-shadow(0 5px 2px rgb(0 0 0 / 0.4));
+    width: 133px;
+  
+}
+
+#welcomeText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#developedByText{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+#shacharLogo{
+    width: 28px;
+    margin-right: 8px;
+}
+
+#developedBy{
+    display: flex;
+    align-items: center;
+}
+
+#homeBody{
+    background-color: white;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    box-shadow: 0 -7px 30px#0000006b;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+   
+}
+#mekarparHomeLogo{
+    height:7%;
+    position: absolute;
+    top: 9px;
+    filter: drop-shadow(0 5px 2px rgb(0 0 0 / 0.4));
+
+}
+
+.plusesImg{
+  position: absolute;
+  bottom: -3vh;
+  width: 900px;
+}
+
+
+
+
+.search{
+    /*width: 320px; */
+    width: 90%;
+    position: relative;
+    top: 50px;
+    height: 34px;
+    border-radius: 20px;
+    border: 1.5px solid #d70000;
+    direction: rtl;
+    color: #d70000;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 10px;
+    font-size: 18px;
+    outline: none;
+    /* background-image: url(./images/glass.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-y: 3px;
+    background-position-x: 6px; */
+    text-indent: 10px;
+}
+
+.search::placeholder{
+    color: #d70000;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 0;
+    font-size: 18px;
+    /* position: relative;
+    top:1px; */
+}
+
+.search:focus
+{
+    border-color:  #d70000;
+}
+
+.glass {
+    position: absolute;
+    top: 55px;
+    width: 29px;
+    left: 5vw;
+}
+
+.formsOutput{
+    position: absolute;
+    width: 90%;
+    top: 98px;
+    height: 66vh;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+.formsList{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+    overflow-y: scroll;
+}
+
+.formsListItem{
+    width: fit-content;
+    border-radius: 20px;
+    border: 1.5px solid #d70000;
+    direction: rtl;
+    color: #d70000;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 10px;
+    font-size: 18px;
+    outline: none;
+    /* background-image: url(./images/glass.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-y: 3px;
+    background-position-x: 6px; */
+    text-indent: 10px;
+    display: flex;
+    align-items: center;
+    /* height: 38px; */
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
+    height: fit-content;
+   
+    
+}
+
+.link{
+    position: relative;
+    left: 10px;
+    top: 3px;
+    margin-right: 12px
+}
+
+
+
+.results{
+    direction: rtl;
+    color: #d70000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+}
+
+#noResultsMessage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    bottom: 20vh;
+    opacity: 0;
+
+}
+
+#noResultsMessage div {
+    color: #d70000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    direction: rtl;
+    text-align: center;
+    font-weight: bold;
+}
+
+.homeContent{
+    position: absolute;
+    left: 32px;
+    width: 92%;
+    top: 98px;
+    height: 66vh;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.commonFormsHeader{
+    direction: rtl;
+    color: #d70000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    right: 17px;
+    font-weight: bold;
+}
+
+.CommonFormsList{
+    display: flex;
+    width: 100vw;
+    overflow-x: scroll;
+    position: relative;
+    top: 14px;
+    height: 228px;
+    overflow-y: hidden;
+}
+
+.CommonFormsListItem{
+    display: flex;
+    flex-direction: column;
+    width: 197px;
+    height: 221px;
+    margin-right: 28px;
+    min-width: 197px;
+}
+.imageContainer{
+    width: 100%;
+    /* height: 90%; */
+    background-size: cover;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+    flex: 3;
+}
+.commonFormTextAndArrow{
+    background: linear-gradient(to bottom left, #FF0000, #870000);
+    direction: rtl;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    DISPLAY: FLEX;
+    flex-direction: row;
+    border-bottom-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    height: 65px;
+    flex: 1;
+    justify-content: space-between;
+    padding-right: 8px;
+    font-size: 17px;
+    padding-top: 6px;
+    font-weight: bold;
+}
+
+.commonFormTextAndArrow a {
+    position: relative;
+    left: 11px;
+    top: 19px;
+}
+commonFormTextAndArrow img {
+   width:35px;
+}
+
+[item="CommonItem0"] {
+    margin-left:28px;
+}
+
+#contactHeader{
+    direction: rtl;
+    color: #d70000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    position: relative;
+   
+    font-weight: bold;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    color: #d70000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    position: relative;
+    top: 25px;
+    right: 26px;
+}
+
+.phoneNumbersHeader ,  .emailHeader{
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #d70000;  
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #999;  
+    }
+
+#waves{
+    z-index: 1;
+    position: absolute;
+    width: 106%;
+    bottom: 0;
+    height: 8vh;
+}
+
+#goBackHomeButton{
+    position: absolute;
+   
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    /* width: fit-content; */
+    border-radius: 20px;
+    font-size: 22px;
+    /* border: 1.5px solid #d70000; */
+    direction: rtl;
+    color: #d70000;
+    font-family: 'Open Sans', sans-serif;
+    bottom: 11vh;
+    padding: 2px 11px;
+    left: 33px;
+    background: #d70000;
+    width: 48px;
+    height: 60px;
+    border-radius: 50%;
+    display: none;
+    box-shadow: 1px 1px 8px #00000085;
+
+}
+
+#goBackHomeButton img{
+    position: relative;
+    right: 1px;
+    bottom: 1px;   
+     height: 47px;
+}
+
+
+@media screen and (min-width: 849px) {
+    #homeBody {
+        background-color: white;
+        width: 100%;
+        height: 90%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+        box-shadow: 0 -7px 30px #0000006b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homeContent {
+        position: absolute;
+        left: 8px;
+        width: 92%;
+        top: 98px;
+        height: 66vh;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    .commonFormsDiv {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 58vw;
+        position: relative;
+        top: 30px;
+        right: 10vw;
+        justify-content: flex-start;
+        margin-top: 23px;
+    }
+
+    .commonFormsHeader {
+        direction: rtl;
+        color: #d70000;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 45px;
+        top:-4px;
+        font-weight: bold;
+        margin-bottom: 37px;
+    }
+
+    .CommonFormsList {
+        overflow: hidden scroll;
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: -31px;
+    flex-flow: wrap;
+    place-content: flex-start center;
+    align-items: center;
+    height: 46vh;
+    }
+   
+
+    .CommonFormsListItem {
+        display: flex;
+        flex-direction: column;
+        height: 293px;
+        margin-right: 93px;
+        min-width: 196px;
+        margin-top: 18px;
+        flex-basis: 177px;
+    }
+
+    .imageContainer {
+        width: 265px;
+        background-size: cover;
+        border-top-right-radius: 17px;
+        border-top-left-radius: 17px;
+        flex: 3;
+    }
+    
+
+    .commonFormTextAndArrow {
+        background: linear-gradient(to bottom left, #FF0000, #870000);
+        direction: rtl;
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        flex-direction: row;
+        border-bottom-right-radius: 17px;
+        border-bottom-left-radius: 17px;
+        /* height: 84px; */
+        flex: 1;
+        justify-content: space-between;
+        /* padding-right: 8px; */
+        font-size: 23px;
+        padding-top: 6px;
+        font-weight: bold;
+        width: 257px;
+        padding-bottom: 10px;
+        
+    }
+
+    .commonFormTextAndArrow img {
+        width: 35px 
+    
+    }
+
+    .commonFormTextAndArrow a {
+        position: relative;
+        left: 14px;
+        top: 33px;
+    
+    }
+    
+    
+
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        color: #d70000;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 35px;
+        position: relative;
+        top: 47px;
+        right: 26px;
+    }
+
+    #contactHeader {
+        direction: rtl;
+        color: #d70000;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 45px;
+        position: relative;
+        font-weight: bold;
+    }
+
+    [item="CommonItem0"] {
+        margin-left:0;
+    }
+
+    ::-webkit-scrollbar {
+        width: 2px;
+        height: 1px;
+        }
+        
+        ::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #d70000;  
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+        background: #999;  
+        }
+
+        .search{
+            width:45%;
+            position: relative;
+            top: 50px;
+            height: 47px;
+            border-radius: 80px;
+            border: 1.5px solid #d70000;
+            direction: rtl;
+            color: #d70000;
+            font-family: 'Open Sans', sans-serif;
+            padding-right: 10px;
+            font-size: 23px;
+            outline: none;
+            text-indent: 10px;
+            
+        }
+
+        .search::placeholder{
+            font-size: 23px;
+        }
+
+        .glass {
+            left: 28vw;
+            top: 58px;
+            width: 36px;
+        }
+
+      .phoneNumbers{
+        margin-top: 16px;
+      }
+      #waves{
+        z-index: 1;
+        position: absolute;
+        width: 106%;
+        bottom: 0;
+        height: 21VH;
+    
+      }
+
+      #goBackHomeButton{
+        bottom: 22vh;
+        width: 60px;
+        left: 98px;
+        height: 74px;
+        background: rgb(215, 0, 0);
+        box-shadow: 1px 1px 8px #00000085;
+    }
+    
+    #goBackHomeButton img{
+        position: relative;
+        left : 5px;
+        bottom: 1px;
+        height: 52px;
+    }
+    
+    .formsOutput{
+        position: absolute;
+    width: 90%;
+    top: 98px;
+    height: 60vh;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    justify-content: flex-start;
+    }
+
+    .results {
+        direction: rtl;
+        color: #d70000;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 35px;
+        /* margin-top: 36px; */
+        position: relative;
+        top: 5px;
+        font-weight: bold;
+    }
+
+    .formsList {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        margin-top: 25px;
+        overflow-y: scroll;
+    }
+    .formsListItem {
+        width: fit-content;
+        border-radius: 64px;
+        border: 1.5px solid #d70000;
+        direction: rtl;
+        color: #d70000;
+        font-family: 'Open Sans', sans-serif;
+        padding: 5px 12px;
+        font-size: 27px;
+        outline: none;
+        text-indent: 10px;
+        display: flex;
+        align-items: center;
+        /* height: 38px; */
+        justify-content: space-between;
+        margin-bottom: 15px;
+        font-weight: bold;
+        /* scale: 1; */
+        position: relative;
+        top: 0px;
+        opacity: 1;
+        line-height: -1px;
+        padding: 5px 12px;
+        padding-left: 22px;
+    }
+    .link {
+        position: relative;
+        left: 1px;
+        top: 6px;
+        margin-right: 2px;
+    }
+    .formsListItem a{
+        width: 32px;
+    }
+    #noResultsMessage img{
+        width: 180px;
+    }
+
+    #noResultsMessage div{
+    font-size: 30px;
+    font-weight: bold;
+    }
+}
